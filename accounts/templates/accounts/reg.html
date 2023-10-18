@@ -1,0 +1,10 @@
+{% extends 'home/base.html' %}
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <div style="display: flex; flex-direction: column; width: 80%; margin-left: 10%; margin-bottom: 2rem; margin-top: 2rem; height: 25rem; justify-content: space-around">
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+{% endblock %}

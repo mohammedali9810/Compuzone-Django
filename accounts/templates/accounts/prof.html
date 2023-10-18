@@ -1,0 +1,21 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+{% if user.id == userdata.id %}
+<div style="height: auto;width: 20rem; margin-top: 2rem;margin-bottom: 2rem" class="container">
+  <div class="card detail-card">
+    <div class="card-body">
+      <h5 class="card-title">First Name: {{ userdata.first_name }}</h5>
+      <p class="card-text">Last Name: {{userdata.last_name }}</p>
+      <p class="card-price">Email: {{ userdata.email }}</p>
+      <a href="/accounts/edituser/{{userdata.id}}" class="btn btn-warning">Edit</a>
+      <a href="/accounts/deleteuser/{{userdata.id}}" class="btn btn-danger">Delete</a>
+    </div>
+<!--    <a href="/" class="btn btn-primary home-btn">Back To Products</a>-->
+  </div>
+{% else %}
+  <h1>You Are Not Authorized !!!!!!</h1>
+  {%endif%}
+</div>
+
+{% endblock %}
