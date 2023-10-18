@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgba(0, 0, 0, 3);">
+    <div><a href="/"><strong>Compuzone</strong></a></div>
+    <div class="container-fluid justify-content-center">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/contact/">Contact us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="navbar-right ml-auto d-flex justify-content-right">
+                <form action="{% url 'home:search' %}" method="GET">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="query" class="form-control form-control-md" placeholder="Search...">
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+    </div>
+     <div class="navbar-right ml-auto d-flex justify-content-right col-md-2">
+         <ul class="navbar-nav">
+         <li class="nav-item">
+             <a class="nav-link btn btn-danger btn-sm " href="{% url 'home:addproduct' %}">Add Product</a>
+         </li>
+         <li class="nav-item">
+              <a class="nav-link btn btn-light btn-sm" href="{% url 'home:cat_list' %}">Show Categories</a>
+         </li>
+         </ul>
+     </div>
+    <div style="margin-right: 1rem; width: 18rem" class="d-flex justify-content-around">
+          {% if user.id %}
+           <a href="accounts/userprofile/{{user.id}}"><p style="font-weight: bold; font-color: white; font-size: 15px; margin: 0" >Welcome, {{user}}</p></a>
+           <a style="font-weight: bold; font-size: 20px;margin: 0" class="btn btn-danger" href="{% url 'logout' %}">Logout</a>
+          {% else %}
+          <a style="font-weight: bold; font-size: 20px;margin: 0" class="btn btn-warning" href="accounts/login/">Login</a>
+          <a style="font-weight: bold; font-size: 20px;margin: 0" class="btn btn-warning" href="{% url 'register' %}">Register</a>
+          {% endif %}
+      </div>
+</nav>

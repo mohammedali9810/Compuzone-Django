@@ -1,0 +1,26 @@
+{% extends 'home/base.html' %}
+{% block content %}
+
+<div class="container">
+    <div class="row g-3">
+        {% for product in products %}
+        <div class="col-3">
+            <div class="card mb-2 border-0 vh-50">
+                <a href="/products/{{product.id}}"><img  src="{{product.image}}"
+                class="card-img-top img-fluid rounded" alt="product thumbnail" style="height: 35vh; object-fit: cover;"/></a>
+                <div class="card-body p-0 position-relative rounded mt-1">
+                    <h5 class="d-inline-block card-title mt-3 w-75">{{product.name}}</h5>
+                    <p class='text-secondary p-0 float-end'>Price : ${{product.price}}</p>
+                    <p class='text-secondary p-0'>Category: {{ product.category }}</p>
+                    <p class='text-secondary p-0'>{{product.stock}} in stock</p>
+                    <p class='text-secondary p-0'>{{product.description}}</p>
+                    <p class='text-secondary p-0'>Owner: {{product.owner}}</p>
+                </div>
+                </div>
+            </div>
+        {% endfor %}
+        
+     </div>
+</div>
+
+{% endblock %}

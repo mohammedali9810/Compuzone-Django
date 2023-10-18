@@ -1,0 +1,34 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row g-5">
+         <h2> Category: {{ category }}</h2>
+        {% for prod in comps %}
+        <div class="col-12 col-md-6 sec-border p-3">
+            <img class="w-100 product-main-img" src={{prod.image.url}} alt=""></img>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <div class="mb-5">
+                <h1>{{prod.name}}</h1>
+                <p class="text-wrap">{{prod.description}}</p>
+                <h2>$ {{prod.price}}</h2>
+                <p>Category: {{ prod.category }}</p>
+            </div>
+            <hr/>
+            <div class="mb-5">
+                <div class="d-flex justify-content-around align-items-center mb-5">
+                    <p>{{prod.stock}} Items In Stock</p>
+                </div>
+            </div>
+            <a href="/"><button class="btn btn-primary">Back to home</button></a>
+            <a href="/delete/{{prod.id}}"><button class="btn btn-danger">Delete</button></a>
+            <a href="/edit/{{prod.id}}"><button class="btn btn-warning">Edit Product</button></a>
+        </div>
+          {% endfor %}
+    </div>
+</div>
+{% endblock %}
