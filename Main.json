@@ -1,0 +1,98 @@
+[
+{
+  "model": "home.comps",
+  "pk": 1,
+  "fields": {
+    "name": "Ryzen 9 5900x",
+    "image": "https://elbadrgroupeg.store/image/cache/catalog/amd/HRD5AlNHNGYwZcULs5JzHOUrIuqHnRxgjpQMcoh-1280x960.jpg",
+    "price": 549,
+    "description": "AMD Ryzen 9 5900x 16 Core 5.0GHZ",
+    "in_stock": true,
+    "category" : 1
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 2,
+  "fields": {
+    "name": "i9 - 10900k",
+    "image": "https://www.bhphotovideo.com/images/images1000x1000/intel_bx8070110900k_core_i9_10900k_processor_20m_1558668.jpg",
+    "price": 899,
+    "description": "Intel I9-10900K 3.7 - 5.0GHZ Turbo Deca Core",
+    "in_stock": true,
+    "category" : 1
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 3,
+  "fields": {
+    "name": "Samsung 980 PRO 2TB SSD",
+    "image": "https://m.media-amazon.com/images/I/71zhBR0KB2L._AC_UF1000,1000_QL80_.jpg",
+    "price": 1249,
+    "description": "Samsung'980 PRO 2TB SSD NVME GRN 4.0",
+    "in_stock": true,
+    "category" : 4
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 4,
+  "fields": {
+    "name": "Asus ROG RTX 4090",
+    "image": "https://m.media-amazon.com/images/I/815d7TTP5UL.jpg",
+    "price": 1500,
+    "description": "Asus ROG RTX 4090 24GB GDDR6X",
+    "in_stock": true,
+    "category" : 3
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 5,
+  "fields": {
+    "name": "Asus TUF RX 7900xtx",
+    "image": "https://m.media-amazon.com/images/I/81il2WdPPJL.jpg",
+    "price": 999,
+    "description": "Asus TUF RX7900XTX 24GB GDDR6X",
+    "in_stock": true,
+    "category" : 3
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 6,
+  "fields": {
+    "name": "Asus Rampage 6 Extreme",
+    "image": "https://blossomzones.com/wp-content/uploads/2017/11/RAMPAGE-VI-EXTREME.jpg",
+    "price": 1700,
+    "description": "Asus Rampage VI Extreme LGA 2066",
+    "in_stock": true,
+    "category" : 2
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 7,
+  "fields": {
+    "name": "SnowBlind Case",
+    "image": "https://cdn.mos.cms.futurecdn.net/ua58h6umZsiDh7vPtC99rk-1200-80.jpg",
+    "price": 1499,
+    "description": "Snow Blind Case with transparent side window",
+    "in_stock": true,
+    "category" : 6
+  }
+},
+{
+  "model": "home.comps",
+  "pk": 8,
+  "fields": {
+    "name": "Asus Thor Rog 1200W PSU",
+    "image": "https://m.media-amazon.com/images/I/81IqY-18ftL.jpg",
+    "price": 899,
+    "description": "Thor Power Supply 1200W Platinum Plus Rating",
+    "in_stock": true,
+    "category" : 5
+  }
+}
+]

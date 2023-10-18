@@ -1,0 +1,56 @@
+[
+{
+  "model": "home.catg",
+  "pk": 1,
+  "fields": {
+    "name": "Processor",
+    "description": "All related to Processors Category",
+    "image": ""
+  }
+},
+  {
+  "model": "home.catg",
+  "pk": 2,
+  "fields": {
+    "name": "Motherboard",
+    "description": "All related to Motherboard Category",
+    "image": ""
+  }
+},
+  {
+  "model": "home.catg",
+  "pk": 3,
+  "fields": {
+    "name": "Gpu",
+    "description": "All related to Graphic Processing Units Category",
+    "image": ""
+  }
+},
+  {
+  "model": "home.catg",
+  "pk": 4,
+  "fields": {
+    "name": "SSD",
+    "description": "All related to Solid State Drives Category",
+    "image": ""
+  }
+},
+  {
+  "model": "home.catg",
+  "pk": 5,
+  "fields": {
+    "name": "Power Supply",
+    "description": "All related to Power Supply Units Category",
+    "image": ""
+  }
+},
+  {
+  "model": "home.catg",
+  "pk": 6,
+  "fields": {
+    "name": "Case",
+    "description": "All related to Cases Category",
+    "image": ""
+  }
+}
+]

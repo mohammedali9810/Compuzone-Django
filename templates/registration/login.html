@@ -1,0 +1,14 @@
+{% extends 'home/base.html'%}
+{% block content%}
+{% load static%}
+
+    <form method="post">
+        {% csrf_token%}
+        <div style="width: 50%; margin-left: 25%; margin-top: 2rem;margin-bottom: 2rem;
+         height: 250px;" class="d-flex flex-column justify-content-around fs-5 fw-bold">
+{{form}}
+            <button type="submit" class="btn btn-primary">Log in</button>
+                </div>
+        </form>
+
+{% endblock%}
